@@ -15,7 +15,7 @@ from limit import QUOTA, VIP
 
 
 class BotText:
-    start = "Welcome to YouTube Download bot. Type /help for more information."
+    start = "Welcome to @uDownMobot. Type /help for more information.\n Bots collection: @Mening_botlarim"
 
     help = f"""
 1. This bot should works at all times. 
@@ -25,12 +25,9 @@ If it stops responding, please wait a few minutes or let me know on Telegram or 
 In order to avoid being abused, 
 every one can use this bot within **{sizeof_fmt(QUOTA)} of quota for every {int(EX / 3600)} hours.**
 
-3. You can optionally choose to become 'VIP' user if you need more traffic. Type /vip for more information.
+3. You can optionally choose to become 'VIP' user if you need more traffic. Type /vip for more information."
 
-4. Source code for this bot will always stay open, here-> https://github.com/tgbot-collection/ytdlbot
-    """ if ENABLE_VIP else "Help text"
-
-    about = "YouTube-DL by @BennyThink. Open source on GitHub: https://github.com/tgbot-collection/ytdlbot"
+    about = "Universal Download by @zehnlibot."
 
     terms = f"""
 1. You can use this service, free of charge, {sizeof_fmt(QUOTA)} per {int(EX / 3600)} hours.
