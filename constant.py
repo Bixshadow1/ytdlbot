@@ -15,7 +15,7 @@ from limit import QUOTA, VIP
 
 
 class BotText:
-    start = "Welcome to @uDownMobot. Type /help for more information.\n Bots collection: @Mening_botlarim"
+    start = "Welcome to @uDownMobot. Bots collection: @Mening_botlarim."
 
     help = f"""
 1. This bot should works at all times. 
@@ -25,9 +25,12 @@ If it stops responding, please wait a few minutes or let me know on Telegram or 
 In order to avoid being abused, 
 every one can use this bot within **{sizeof_fmt(QUOTA)} of quota for every {int(EX / 3600)} hours.**
 
-3. You can optionally choose to become 'VIP' user if you need more traffic. Type /vip for more information."
+3. You can optionally choose to become 'VIP' user if you need more traffic. Type /vip for more information.
 
-    about = "Universal Download by @zehnlibot."
+4. Source code for this bot will always stay open, here-> https://github.com/tgbot-collection/ytdlbot
+    """ if ENABLE_VIP else "Help text"
+
+    about = "@uDownMobot by @zehnlibot."
 
     terms = f"""
 1. You can use this service, free of charge, {sizeof_fmt(QUOTA)} per {int(EX / 3600)} hours.
@@ -66,7 +69,7 @@ __I live in a place where I don't have access to Telegram Payments. So...__
 1. afdian: with your order number `/vip 123456`
 2. buy me a coffee: with your email `/vip someone@else.com`
     """ if ENABLE_VIP else "VIP is not enabled."
-    vip_pay = "Processing your payments...If it's not responding after one minute, please contact @BennyThink."
+    vip_pay = "Processing your payments...If it's not responding after one minute, please contact @zehnlibot."
 
     def remaining_quota_caption(self, chat_id):
         if not ENABLE_VIP:
